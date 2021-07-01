@@ -11,10 +11,8 @@ def start():
     Behind one you get one billion dollars other two de nada, good luck. """
 
     choices = [
-        ('choose_A',"A"),
-        ('choose_B',"B"),
-        ('choose_C',"C")
-    ]
+        ('choose_A',"A"),('choose_B',"B"),('choose_C',"C")
+        ]
 
     return render_template('MontyHall.html', title=title, text=text, choices=choices)
 

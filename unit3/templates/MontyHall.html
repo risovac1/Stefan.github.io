@@ -3,8 +3,8 @@
 <head>
     <style>
         body {
-            background-color: lawngreen;
-            color: white;
+            background-color: white;
+            color: black;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
@@ -14,11 +14,14 @@
 
         p, a {
             font-size: 20px;
+            text-decoration: none;
         }
 
         a {
             color: red;
             font-weight: bold;
+            margin: 10px;
+            font-size: 40px;
         }
 
         .container {
@@ -39,13 +42,13 @@
 
             <p>Which one do you choose?</p>
 
-            <ul>
+            
                 {% for (page_name, choice) in choices %}
-                <li>
+               
                     <a href="{{url_for(page_name)}}">{{choice}}</a>
-                </li>
+                    <img src="https://static.turbosquid.com/Preview/2019/11/19__10_26_27/CCDR1.png3962132B-8C45-4CDF-BD01-1D45325DCDBFLarge.jpg" width="170" height="250">
                 {% endfor %}
-            </ul>
+           
 
         {% else %}
             
