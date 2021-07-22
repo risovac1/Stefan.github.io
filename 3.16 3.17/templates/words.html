@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+
+
+{% block container %}
+<ul>
+{% for n in words %}
+    <li>{{n}}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
