@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body
+{
+margin: 0px;
+font-family: sans-serif;
+}
+
+.ul1 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.li1 
+{
+  float: left;
+}
+
+.li1 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.li1 a:hover {
+  background-color: #111;
+}
+
+.container
+{
+   width: auto;
+    margin-left: auto;
+}
+
+</style>
+
+</head>
+<body>
+
+
+    <ul class="ul1">
+        <li class="li1"><a href="default.asp">Home</a></li>
+        <li class="li1"><a href="page2.asp">Page2</a></li>
+        
+      </ul>
+    
+    <div class="container">
+        {% block container %}
+
+
+        {% endblock %}
+
+    </div>
+</body>
+</html>
+
